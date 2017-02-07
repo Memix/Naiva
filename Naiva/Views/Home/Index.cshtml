@@ -1,0 +1,17 @@
+﻿@model List<Naiva.Models.IndexMenu>
+@{
+    ViewBag.Title = "Index";
+    
+
+}
+
+<img src="~/Content/images/books2.jpg" />
+
+@foreach (var IndexMenu in Model)
+{
+    <button class="btn btn-primary btn-lg" ahref="">@IndexMenu.Id</button>
+    
+}
+
+
+

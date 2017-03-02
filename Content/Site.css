@@ -1,0 +1,50 @@
+﻿html, body {
+    padding-top: 20px;
+    color: lightgrey;
+   height: 200%;
+    line-grid: match-parent;
+   background-color: #262626;
+   position: relative;
+   
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #262626;
+    position: relative;
+    height: 100%;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+    background-color: #262626;
+}
+
+/*table change*/
+
+.col-md-4
+{
+    width: 200px;
+}
+
+.MyFooter {
+    background-color: whitesmoke;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    
+}
+
+
+
+
+
+
+
+

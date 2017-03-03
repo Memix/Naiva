@@ -24,4 +24,6 @@ namespace Naiva.Models
     {
         public String Id { get; set; }
     }
+
+    
 }

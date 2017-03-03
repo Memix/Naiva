@@ -1,0 +1,105 @@
+﻿@model IEnumerable<Naiva.Models.FirstMenu>
+
+
+<div class="container body-content">
+    @{
+        ViewBag.Title = "CVIndex";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+
+
+    }
+
+    <h2>MY CV</h2>
+    <link href="~/Content/CVIndex.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/CVIndex.js"></script>
+
+    <div class="picture">
+        <img src="~/Content/images/myid.jpg" class="img-thumbnail glyphicon-align-center" />
+    </div>
+
+
+    <table class="table-bordered">
+        <tr></tr>
+        <tr class="col-md-4 ">
+            @Html.DisplayNameFor(model => model.Id)
+        </tr>
+        @foreach (var item in Model)
+            {
+            <tr>
+                <td class="col-md-4">
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+            </tr>
+        }
+    </table>
+
+    <table class="table-bordered">
+        <tr></tr>
+        <tr class="col-md-4">
+            @Html.DisplayNameFor(model => model.Address)
+        </tr>
+        @foreach (var item in Model)
+            {
+            <tr>
+                <td class="col-md-4">
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+            </tr>
+        }
+    </table>
+
+    <table class="table-bordered">
+        <tr></tr>
+        <tr class="col-md-4">
+            @Html.DisplayNameFor(model => model.Phone)
+        </tr>
+        @foreach (var item in Model)
+            {
+            <tr>
+                <td class="col-md-4">
+                    @Html.DisplayFor(modelItem => item.Phone)
+                </td>
+            </tr>
+        }
+    </table>
+
+    <table class="table-bordered">
+        <tr></tr>
+        <tr class="col-md-4">
+            @Html.DisplayNameFor(model => model.Email)
+        </tr>
+        @foreach (var item in Model)
+            {
+            <tr>
+                <td class="col-md-4">
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+            </tr>
+        }
+    </table>
+
+    <table class="table-bordered">
+        <tr></tr>
+        <tr class="col-md-4">
+            @Html.DisplayNameFor(model => model.Skype)
+        </tr>
+        @foreach (var item in Model)
+            {
+            <tr>
+                <td class="col-md-4">
+                    @Html.DisplayFor(modelItem => item.Skype)
+                </td>
+            </tr>
+        }
+    </table>
+
+
+
+
+    @{Html.RenderAction("Index", "Experience", new { area = "WorkExperience" });}
+
+    @{Html.RenderAction("Create", "Comment", new { area = "Comments" });}
+
+
+</div>
+

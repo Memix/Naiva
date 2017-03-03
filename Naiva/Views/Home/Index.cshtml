@@ -1,17 +1,30 @@
 ﻿@model List<Naiva.Models.IndexMenu>
-@{
-    ViewBag.Title = "Index";
+
+<div class="container body-content">
+    @{
+        ViewBag.Title = "Index";
+
+
+    }
+
+    <link href="~/Content/index.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/CVIndex.js"></script>
+
+    
+        <img src="~/Content/images/books2.jpg" style="float:left" />
+
+        <button>
+            @Html.ActionLink("CV", "CVIndex", "CV", new { area = "" }, new { @class = "navbar-brand btn" })
+        </button>
+    </div>
+
     
 
-}
-
-<img src="~/Content/images/books2.jpg" />
-
-@foreach (var IndexMenu in Model)
-{
-    <button class="btn btn-primary btn-lg" ahref="">@IndexMenu.Id</button>
     
-}
+
+
+
+
 
 
 

@@ -13,6 +13,7 @@ namespace Naiva
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            ViewEngines.Engines.Add(new RazorViewEngine());
         }
     }
 }
